@@ -1,0 +1,68 @@
+Client-side web APIs (Application Programming Interfaces).
+    APIs are programming features for manipulating different aspects of the browser and operating system the site is running on, or manipulating data from other websites or services.
+    
+    * Introduction to web APIs
+    * Manipulating documents
+    * Fetching data from the server
+    * Third party APIs
+    * Drawing graphic
+    * Video and audio APIs
+    * Client-side storage
+
+* Intro to web API
+    Application Programming Interfaces (APIs) are contructs made available in programming languages to allow devs to create complex functionality more easily. They abstract more complex code away from you and providing some easier syntax to use in its place.
+
+    APIs in client-side JS
+        Client-side JS, in particular, has many APIs available to it
+            * Browser APIs are built into your web browser and are able to expose dat afrom the browser and surrounding computer env and do useful complex things with it.
+                ex) Web Audio API
+            * Third-party APIs are not built into the browser by default, and you generally have to retrieve their code and information from somewhere on the Web.
+                ex.) Google Maps API 
+
+Relationship between JS, APIs, and other JS tools
+    * JS -- a high-level scripting langauge built into browsers that allows you to implement functinoality on web pages/apps. (also available on Node)
+    * Browser APIs -- constructs built into the browser that sits on top of hte JS lang and allows you to implement functionality more easily.
+    * Third-party APIs -- constrcuts built into third-party platform (ex. FB) that allow you to use some of those platform's functionality in you own web pages.
+    * JS libraries -- usually one or more JS files containing custom functions such as jQuery, React, etc.
+    * JS frameworks -- the next step up from libraries, JS frameowrks (Angular & Ember) tend to be packages of HTML, CSS, JS, nad other technologies that you install and then use to write an entire web application from scratch.
+
+Common browser APIs
+    * APIs for manipulating documents loaded into the browser. The most obv example is the DOM (Document Object Model) API, which allows you to manipulate HTML and CSS -- creating, removing and changing HTML, dynamically applying new styles to your page, etc.
+    * APIs that fetch data from the server to update small sections of a webpage on their own are very commonly used. These seemingly small detail has had a huge impact on the performance oand behavior of sites (such as fetching API)
+
+    * APIs for drawing and manipulating graphics are widely supported in browsers -- the most popular ones are Canvas and WebGL, which allow you to programmatically update the pixel data contained in HTML <canvas> element  to create 2D and 3D scenes.
+    * Audio and Video APIs like HTMLMediaElement, the Web Audio API, and WebRTC allow you to do really interesting things with multimedia such as creating custom UI controls for playing audio and video, displaying text tracks like captions and subtitles along with you videos, grabbing video from you web camera to be manipulated via a canvas .....
+    * Device APIs enable you to interat with device hardware such as accessing the device GPS to find the user's position using the Geolocation API.
+    * Client-side storage APIs enable you to store data on the client-side, so you can create an app that will save its state bet. page loads (Web Storage API or IndexedDB API)
+
+
+Common third-party APIs
+    * Map APIs like Mapquest and Google Maps API
+    * FB suite of API
+    * Telegram API
+    * Youtube, Pinterest API, Twillio, Disqus, Mastodon, IFTTT APIs, and so on.
+
+
+How do APIs work?
+    They are based on objects
+        Your code interacts with APIs using one or more JS objs, which serve as containers for the data the API uses (contained in obj properties), and the functionality the API makes available (contained in obj method) 
+
+    They have recognizable entry points.
+        When using an APIs, you should make sure you know where the entry point is for the APIs.
+
+
+Manipulating documents
+    When writing web pages and apps, one of the most common things you will want to do is manipulate the document structure in some way.
+    This is usually done by using the Document Object Model (DOM), a set of APIs for controlling HTML, CSS 
+
+    Important part of a web browser
+        Main parts of a browser: Navigator, Window, Document.
+            * The Window is the browser tab that a web page is loaded into.
+            * The Navigator represents the state and identity of the browser (i.g. user-agent) as it exists on the web.
+            * The document is the actual page loaded into the window, and is represented by JS by the Document object.
+    
+    The Document Object Model
+
+        
+    Creating and placing new nodes
+        
