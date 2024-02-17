@@ -53,7 +53,10 @@ How do APIs work?
 
 Manipulating documents
     When writing web pages and apps, one of the most common things you will want to do is manipulate the document structure in some way.
-    This is usually done by using the Document Object Model (DOM), a set of APIs for controlling HTML, CSS 
+    This is usually done by using the Document Object Model (DOM), a set of APIs for controlling HTML, and styling information that makes heavy use of the Document object.
+
+    The browsers with much moving parts are locked down mostly centered around security.
+        Despite the limitations, Web APIs still gives us a lot of functionality that enables us to do a great many things. 
 
     Important part of a web browser
         Main parts of a browser: Navigator, Window, Document.
@@ -62,7 +65,10 @@ Manipulating documents
             * The document is the actual page loaded into the window, and is represented by JS by the Document object.
     
     The Document Object Model
+        This is "tree structure" representation created by the browser that enables the HTML structure to easily accessable by programming langauge.
+        Each entry in the tree is called node.
+            * Root node, Child node, Descendant node, Parent Node, Child Sibling node.
 
-        
-    Creating and placing new nodes
-        
+
+Fetching data from a server
+    

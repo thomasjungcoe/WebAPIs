@@ -4,6 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple DOM example</title>
+    <style>
+      .highlight {
+        color: white;
+        background-color: black;
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <section>
@@ -17,10 +26,34 @@
       </p>
     </section>
     <script>
+      // storing a reference of DOM
       const link = document.querySelector("a");
 
-      link.textContent = "Mozilla Dev Network";
+      link.textContent = "Mozilla Developer Network";
       link.href = "https://developer.mozilla.org";
+
+      // grabbing a ref of section
+      const sect = document.querySelector("section");
+
+      const para = document.createElement("p");
+      para.textContent = "We hope you enjoy the ride.";
+
+      sect.appendChild(para);
+
+      const text = document.createTextNode(
+        "- the premier source for web development knowledge."
+      );
+
+      const linkPara = document.querySelector("p");
+      linkPara.appendChild(text);
+
+      sect.appendChild(linkPara);
+      sect.removeChild(linkPara);
+
+      // removing reference to itself. However it isn't supported in older browser
+      linkPara.remove();
+      // linkPara.parentNode.removeChild(linkPara); // work around
+      para.setAttribute("class", "highlight");
     </script>
   </body>
 </html>
