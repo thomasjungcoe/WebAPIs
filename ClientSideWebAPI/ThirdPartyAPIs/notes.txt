@@ -1,0 +1,59 @@
+Third-party APIs
+
+    Not all APIs are built into the browser. Many large websites and services such as Google Maps, Twitter, Fb, Pypl, etc provide APIs allowing developers to make use of their data
+
+What are third party APIs?
+    Third party APIs are APIs provided by third parties -- generally companies such as FB, X, GOOG -- to allow you to access their functionality via JS and use it on your site.
+        ex.) Using mapping APIs to display custom maps on your pages.
+    
+    They are found on third-party servers.
+        Browser APIs are built into the browser -- you can access them from JS immediately.
+        Third party APIs are located on third party servers. To access them from JS you first need to connect to their API functionality and make it available on your page.
+            This typically involves first linking to a JS lib avialable on the server via a <script> element.
+            ex.) 
+                <script
+                    src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"
+                    defer></script>
+                <link
+                    rel="stylesheet"
+                    href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+    
+    You can then start using the objects available in that library.
+        ex.) 
+            const map = L.mapquest.map("map", {
+                center: [53.480759, -2.242631],
+                layers: L.mapquest.tileLayer("map"),
+                zoom: 12,
+            });
+
+    They usually require API keys.
+        Security for browser APIs tends to be handled by permission prompts. The purpose of these is so that the user knows what is going on in the websites they visit and 
+            is less likely to fall victim to someone using an API in a mallicious way.
+
+        Third party APIs have a slightly different permissions system -- they tend to use dev keys to allow devs access to the API functionality, 
+            which is more to protect the API vendor than the user.
+                ex.) 
+                    L.mapquest.key = "YOUR-API-KEY-HERE";
+
+    
+    A RESTful API -- NYTimes
+        i.g.) The New York Time API allows you to retrieve New York Times news story information and display it on your site.
+            This type of API is known as a RESTful API -- instead of getting data using the features of a JS library like we did with Mapquest, 
+            we get data by making HTTP requests to specific URLs
+
+    An approach for using third-party APIs 
+        * Find the doc
+        * Get a dev key
+
+    Requesting data from the API 
+        Fetch API is used for this.
+            ex.)
+                fetch(url)
+                    .then((response) => response.json())
+                    .then((json) => displayResults(json))
+                    .catch((error) => console.error(`Error fetching data: ${error.message}`));
+    
+    Displaying the data
+        fetchResult()
+    
+    * You can use multiple APIs to build an app (i.g. Youtube example)
