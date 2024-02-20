@@ -71,4 +71,31 @@ Manipulating documents
 
 
 Fetching data from a server
+    Another very common task in modern websites and applications is retrieving individual data items from the server and to update sections of a webpage without 
+        having to load an entire new page.
     
+    A web page consists of an HTML page and (usually) various other files, such as stylesheets, scripts, and images.
+    The basic model of page loading on the Web is that your browser makes one or more HTTP requests to the server for the files
+        needed to display the page.
+    
+    When on a web like library is that they would have to fetch and load the entire page, 
+        only when we need to update one part of it.
+
+    So instead of the traditional model, many websites use JS APIs to request data from the server 
+        and update the page content w/o a page load.
+
+    The main API here is the Fetch API.
+        This enables JS running in a page to make an HTTP request to a server to retrieve specific resources.
+            This is a common approach for data-driven websites such as Amazon, Youtube, eBay, and so on.
+    
+    * Page updates are alot quicker and you dont' have to wait for the page to refresh, meaning that the site
+        feels faster and more responsive.
+    * Less data is downloaded on each update, meaning less wasted bandwidth. This may not be a huge issue 
+        on a desktop with braodband connection, but it's a major issue for mobile devices and in countries
+        that don't have ubiquitous fast internet service.
+
+    To make this even faster, some sites store assets and data inside user's computer.
+
+    Sometimes, especially in older code, you'll see another API called XMLHttpRequest 
+        (often abbreviated as "XHR") used to make HTTP requests. This predated Fetch, 
+        and was really the first API widely used to implement AJAX.
