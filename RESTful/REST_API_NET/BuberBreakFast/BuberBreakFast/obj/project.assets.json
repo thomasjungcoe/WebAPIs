@@ -1,0 +1,92 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "BuberBreakFast.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BuberBreakFast.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuberBreakFast.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BuberBreakFast.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../BuberBreakFast.Contracts/BuberBreakFast.Contracts.csproj",
+      "msbuildProject": "../BuberBreakFast.Contracts/BuberBreakFast.Contracts.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "BuberBreakFast.Contracts >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\thoma\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\thoma\\Desktop\\projects\\WebAPI\\WebAPIs\\RESTful\\REST_API_NET\\BuberBreakFast\\BuberBreakFast\\BuberBreakFast.csproj",
+      "projectName": "BuberBreakFast",
+      "projectPath": "C:\\Users\\thoma\\Desktop\\projects\\WebAPI\\WebAPIs\\RESTful\\REST_API_NET\\BuberBreakFast\\BuberBreakFast\\BuberBreakFast.csproj",
+      "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thoma\\Desktop\\projects\\WebAPI\\WebAPIs\\RESTful\\REST_API_NET\\BuberBreakFast\\BuberBreakFast\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\thoma\\Desktop\\projects\\WebAPI\\WebAPIs\\RESTful\\REST_API_NET\\BuberBreakFast\\BuberBreakFast.Contracts\\BuberBreakFast.Contracts.csproj": {
+              "projectPath": "C:\\Users\\thoma\\Desktop\\projects\\WebAPI\\WebAPIs\\RESTful\\REST_API_NET\\BuberBreakFast\\BuberBreakFast.Contracts\\BuberBreakFast.Contracts.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+CRUD based REST API using ASP.NET
+
+Title : Buber Breakfast Client
+
+Backend Service Architecture
+    1.) definition of the API
+    2.) actual logic of the application
+        Why have two projects?
+            Having your API definition in one (bunch of C# classes) in a separate project allows you to define it as a class library and publish it
+                as a nugget package, which allows the clients to consume it as a nugget themselves.
+            This is also useful for versioning such as updates.
+                All the clients have to do is comsume the new nugget package.
+
+        Creating the solution 
+            dotnet new sln -o <proj name>
+        Creating projects
+            dotnet new classlib -o <proj.Contracts> <-- the proj that will model our API
+        Create WebAPI
+            dotnet new webapi -o <proj name>
+        building the project
+            dotnet build
+                This may result in an error since the solution itself is empty.
+                So you would have to add projects into the solution
+        Add projects into the sln
+            dotnet sln add <proj name> <proj name> ...
+                or 
+            dotnet sln add (ls -r **/*.csproj)   <-- add all projects recursively
+
+        When BuberBreakFast project is requesting an obj (BuburBreakFast.Contract), it also need to know the ref to it.
+            dotnet add .\BuberBreakFast\ reference .\BuberBreakFast.Contracts\
+
+        To run after building the project
+            dotnet run --project .\BuberBreakFast\
+
+Techonology
+    1.) ASP.NET
+    2.) dotnet cli
+    3.) VS code and extentions
+
+
+Architecture Choices
+    1.) CRUD REST API
+    2.) Best Practices
+    3.) Functional Programming
+    4.) Domain-Driven Design
