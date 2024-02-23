@@ -1,1 +1,10 @@
 Drawing graphics
+    The browser contains some very powerful graphics programming tools, from Scalable Vector 
+    Graphics (SVG) language, to APIs for drawing on HTML <canvas> elements. 
+
+    While you could use CSS and JS to animate (and otherwise manipulate) SVG vector images 
+        -- as they are represented on markup -- there are  still no way to do the same for
+        bitmap images, and the tools available were rather limited.
+    
+    This improved as browsers began to support the <canvas> element and assocaited Canvas API 
+        in 2004 `
