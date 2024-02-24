@@ -7,4 +7,17 @@ Drawing graphics
         bitmap images, and the tools available were rather limited.
     
     This improved as browsers began to support the <canvas> element and assocaited Canvas API 
-        in 2004 `
+        in 2004 
+
+    Drawing paths
+        If you want to draw anything more complex than a rectangle, you need to draw a path.
+        
+        Basically, this involves writing code to specify exactly what path the pen should move 
+        along on your canvas to trace the shape you want to draw.
+
+        Canvas includes functions for drawing straight lines, circles, Bezier curves, and more.
+        
+
+
+
+
