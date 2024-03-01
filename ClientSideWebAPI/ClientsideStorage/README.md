@@ -13,7 +13,7 @@ Objectives:
         Most modern websites are 'dynamic' -- they store data on the server using some kind of database (server-side storage), then run server-side code to retrieve needed data, insert it into static page template, and serve the resulting HTML to the client to be displayed by the user's browser.
 
         Client-side storage works in a simliar principle, but different uses.
-        It consists of JS APIs that allow you to store data on the client and then retrieve it when needed.
+        It coaaaaaaaas of JS APIs that allow you to store data on the client and then retrieve it when needed.
 
         - Personalizing ste preferences (user's settings and whatn not)
         - Persisting previous site activity (storing contents of shopping cart from previous session, user loggin etc.)
@@ -49,4 +49,10 @@ Objectives:
             * "sessionStorage" maintains a separate storage area for each given origin that's available for the duration of the page session (as long as the browser is open)
             * "localStorage" does the same thing, but persists even when the browser is closed and reopened.
             These mechanisms are available via the Window.sessionStorage and Window.localStorage 
-    
+
+    Storing complex data -- IndexedDB
+        The "IndexedDB_API" (IDB) is a complete database system available in the browser in which you can store complex related data, the types of which aren't limited to simple values like strings or    numbers.
+
+        The IndexedDB API allows you to create a database, then create object stores within that database.
+
+        However, this does come at a cost: indexedDB is much more complex to use than the Web Storage API.
